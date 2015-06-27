@@ -22,6 +22,12 @@ public class MainController {
 		return "GET METHOD";
 	}
 	
+	@RequestMapping(value = "/nacho", method = RequestMethod.GET)
+	public String nacho() {
+		System.out.println("I'M NACHO FATHER");
+		return "helloworld";
+	}
+	
 	@RequestMapping(method = RequestMethod.POST)
 	public String post(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("Hit Post Method");
