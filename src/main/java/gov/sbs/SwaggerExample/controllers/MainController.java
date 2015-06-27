@@ -28,6 +28,12 @@ public class MainController {
 		return "helloworld";
 	}
 	
+	@RequestMapping(value = "/travel", method = RequestMethod.GET)
+	public String travel() {
+		System.out.println("I'M Going Away for the 4th of July!!!!");
+		return "helloworld";
+	}
+	
 	@RequestMapping(method = RequestMethod.POST)
 	public String post(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("Hit Post Method");
