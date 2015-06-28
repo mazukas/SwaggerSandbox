@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController(value = "main")
 public class MainController {
 
-	private String temp = "";
-	private String temp2 = "";
+	private String badVar = "";
+	private String badVar2 = "";
+
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String hello() {
