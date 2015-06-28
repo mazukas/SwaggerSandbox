@@ -76,6 +76,7 @@ public class PmdViolation {
 		sb.append("\nEnd Index : " + getEnd());
 		sb.append("\nRule : " + getRule());
 		sb.append("\nMessage : " + getMsg());
+		sb.append("\nViolator : " + getViolator());
 		return sb.toString();
 	}
 
